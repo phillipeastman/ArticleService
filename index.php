@@ -1,5 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: *");
+header('Content-Type: application/json');
 require 'vendor/autoload.php';
 require 'Models/Article.php';
 require 'Models/ArticleList.php';

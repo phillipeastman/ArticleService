@@ -58,7 +58,7 @@ class ArticleList {
         $stmt->bind_result($ID, $UserName, $CategoryName, $Timestamp, $Title, $Content);
 
         while ($stmt->fetch()) {
-            $this->List[$ID] = array($UserName, $CategoryName, $Timestamp, $Title, $Content);
+            $this->List[$ID] = array($UserName, $CategoryName, $Timestamp, $Title, htmlspecialchars($Content));
         }
     }
 }
